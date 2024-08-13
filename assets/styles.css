@@ -1,0 +1,38 @@
+header {
+  padding: 10px 20px;
+  background-color: #405d72;
+  color: #f7e7dc;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+header nav {
+  padding-top: 45px;
+  padding-right: 10px;
+  float: right;
+  font-size: 20px;
+}
+
+header nav a {
+  display: inline-block;
+  margin-left: 25px;
+  color: #f7e7dc;
+}
+
+section {
+  display: flex;
+}
+
+section div h2 {
+  margin: 0px 30px;
+  border-right: 4px solid #405d72;
+  line-height: 80px;
+  width: 200px;
+}
+
+.horiseon-img {
+  width: 100%;
+}
