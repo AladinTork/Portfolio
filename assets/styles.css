@@ -1,3 +1,5 @@
+/* styles the header including a nav */
+
 header {
   padding: 10px 20px;
   background-color: #405d72;
@@ -9,11 +11,12 @@ header h1 {
   font-size: 48px;
 }
 
-header nav {
+nav {
   padding-top: 45px;
   padding-right: 10px;
   float: right;
   font-size: 20px;
+  display: flex;
 }
 
 header nav a {
@@ -22,17 +25,135 @@ header nav a {
   color: #f7e7dc;
 }
 
+/* styles the main body*/
+
 section {
   display: flex;
 }
 
 section div h2 {
   margin: 0px 30px;
-  border-right: 4px solid #405d72;
-  line-height: 80px;
-  width: 200px;
+  width: 150px;
+  margin-top: 20px;
 }
 
-.horiseon-img {
+.about-me div p {
+  display: block;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #405d72;
+}
+
+.contact-me div p {
+  display: block;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #405d72;
+}
+
+.projects {
+  display: block;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #405d72;
+}
+
+.col1 {
+  display: block;
+  position: relative;
+}
+
+.col1 h3 {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  background-color: #adcde7;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  bottom: 20px;
+}
+
+.refactor-img {
+  flex: 100%;
   width: 100%;
+  border: 2px solid #adcde7;
+  filter: blur(0px);
+}
+
+.row {
+  display: inline-flex;
+}
+
+.row a {
+  display: flex;
+  position: relative;
+}
+
+.placeholder-left-img {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  background-color: #adcde7;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  bottom: 10px;
+}
+
+.placeholder-right-img {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  background-color: #adcde7;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  bottom: 10px;
+}
+
+.row a img {
+  width: 99%;
+  border: 2px solid #adcde7;
+  cursor: pointer;
+}
+
+/* alligns right-side projects to the right */
+
+.project3-img,
+.project5-img {
+  justify-content: end;
+}
+
+.blurred {
+  opacity: 0.5;
+}
+
+/* pseudo-classes */
+
+.refactor-img:hover,
+.row a img:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px #405d72;
+  -moz-box-shadow: 0px 0px 30px 0px #405d72;
+  box-shadow: 0px 0px 30px 0px #405d72;
+  transform: scale(1.01);
+}
+
+.blurred:hover {
+  opacity: 1;
+  transition-duration: 0.7s;
+}
+
+/* media querry */
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-bottom: 35px;
+  }
+  nav {
+    flex-direction: column;
+    float: none;
+    text-align: center;
+  }
+  .tag {
+    font-size: 15px;
+  }
+
 }

@@ -11,14 +11,14 @@
     <header>
       <h1>Arman Tork</h1>
       <nav class="navigation">
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
+        <a href="#about-me">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contact-me">Contact Me</a>
         <a href="#">Resume</a>
       </nav>
     </header>
     <main>
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <div><h2>About Me</h2></div>
         <div>
           <p>
@@ -29,18 +29,49 @@
           </p>
         </div>
       </section>
-      <section class="work">
+      <section class="work" id="work">
         <div><h2>Work</h2></div>
         <div class="projects">
-          <a href="https://aladintork.github.io/semantic-refactor/"
-            ><img
-              src="./assets/horiseon.png"
-              alt="horiseon webpage"
-              class="horiseon-img"
-          /></a>
+          <div class="row1">
+            <div class="col1">
+              <a href="https://aladintork.github.io/semantic-refactor/"
+                ><h3 class="tag">Semantic Refactor</h3>
+                <br />
+              <a href="https://aladintork.github.io/semantic-refactor/"
+                ><img src="./assets/horiseon.png" class="refactor-img blurred"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <a href="#"
+              ><img
+                src="./assets/elementor-placeholder-image.webp"
+                alt="placeholder image" class="blurred"
+            /><h3 class="placeholder-left-img tag">Project Placeholder</h3></a>
+
+            <a href="#" class="project3-img"
+              ><img
+                src="./assets/elementor-placeholder-image.webp"
+                alt="placeholder image" class="blurred"
+            /><h3 class="placeholder-right-img tag">Project Placeholder</h3></a>
+          </div>
+
+          <div class="row">
+            <a href="#"
+              ><img
+                src="./assets/elementor-placeholder-image.webp"
+                alt="placeholder image" class="blurred"
+            /><h3 class="placeholder-left-img tag">Project Placeholder</h3></a>
+
+            <a href="#" class="project5-img"
+              ><img
+                src="./assets/elementor-placeholder-image.webp"
+                alt="placeholder image" class="blurred"
+            /><h3 class="placeholder-right-img tag">Project Placeholder</h3></a>
+          </div>
         </div>
       </section>
-      <section class="contact-me">
+      <section class="contact-me" id="contact-me">
         <div><h2>Contact Me</h2></div>
         <div>
           <p>
