@@ -1,9 +1,10 @@
 /* styles the header including a nav */
 
 header {
-  padding: 10px 20px;
+  padding: 10px 20px 10px 20px;
   background-color: #405d72;
   color: #f7e7dc;
+  position: relative;
 }
 
 header h1 {
@@ -19,10 +20,18 @@ nav {
   display: flex;
 }
 
-header nav a {
+nav a {
   display: inline-block;
   margin-left: 25px;
   color: #f7e7dc;
+}
+
+#pfp {
+  width: 100px;
+  position: absolute;
+  left: 80px;
+  top: 100px;
+  border-radius: 100%;
 }
 
 /* styles the main body*/
@@ -155,5 +164,4 @@ section div h2 {
   .tag {
     font-size: 15px;
   }
-
 }
