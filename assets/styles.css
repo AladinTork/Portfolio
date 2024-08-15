@@ -61,15 +61,18 @@ section div h2 {
 }
 
 .projects {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 20px;
   padding-left: 20px;
   border-left: 2px solid #405d72;
+  justify-content: center;
 }
 
 .col1 {
-  display: block;
+  display: flex;
   position: relative;
+  justify-content: center;
 }
 
 .col1 h3 {
@@ -90,7 +93,9 @@ section div h2 {
 }
 
 .row {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .row a {
@@ -135,9 +140,25 @@ section div h2 {
   opacity: 0.5;
 }
 
+#contact-links {
+  width: 100%;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  border-left: 2px solid #405d72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
 #contact-links a {
   color: black;
   font-weight: bold;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
 }
 
 /* pseudo-classes */
@@ -168,5 +189,15 @@ section div h2 {
   }
   .tag {
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .refactor-img {
+    max-width: 900px;
+  }
+
+  .row a img {
+    max-width: 450px;
   }
 }
