@@ -135,6 +135,11 @@ section div h2 {
   opacity: 0.5;
 }
 
+#contact-links a {
+  color: black;
+  font-weight: bold;
+}
+
 /* pseudo-classes */
 
 .refactor-img:hover,
